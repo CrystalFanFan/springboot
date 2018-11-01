@@ -16,7 +16,7 @@ public class MyabatisController {
     @Autowired
     private IMessageService messageService;
 
-    @RequestMapping("/{currentPage}/{pageSize}")
+    @RequestMapping(value="/{currentPage}/{pageSize}")
     public String index(Model model, @PathVariable("currentPage") int currentPage,
                         @PathVariable("pageSize") int pageSize) {
 
